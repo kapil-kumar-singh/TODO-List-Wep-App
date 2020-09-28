@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    background-color: rgb(238, 228, 238);
+}
+
+#heading {
+    text-align: center;
+}
+#discription_div{
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    padding-left: 2vw;
+
+}
+
+#discription {
+    display: block;
+    width: 100%;
+    margin: 5px 0px 10px 0px;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: larger;
+}
+
+#cat-date-container{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#category-div{
+    padding: 10px 0px;
+    padding-left: 2vw;
+    border-right: 1px solid black;
+
+}
+.cat-date-style{
+    width: 50vw;
+}
+#category{
+    outline: none;
+    width: 90%;
+    background: none;
+    border: none;
+    font-size: larger;
+    margin-left: -4px;
+}
+#due-date-div{
+    padding: 10px 20px;
+
+}
+#due-date{
+    /* width: 100%; */
+    outline: none;
+    background: none;
+    border: none;
+}
+
+#buttons{
+    margin: 7vh 0vh;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button{
+    font-size: large;
+    margin: 0px 1px;
+    outline: none;
+    border: none;
+    line-height: 2.5rem;
+    width: 165px;
+    color: white;
+    cursor: pointer;
+}
+#add_button{
+    background-color: rgb(68, 63, 63);
+}
+#delete_button{
+    background-color: rgb(255, 55, 55);
+}
