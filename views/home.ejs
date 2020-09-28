@@ -42,6 +42,32 @@
         <button type="submit" id="delete_button"><i class="fas fa-trash-alt"></i> &nbsp; DELETE TASK</button>
     </div>
     
+    <ul>
+        <% for(let i of Todoschema) { %>
+            <li class="list">
+                <div class="checkbox">
+                    <form action="" method="get">
+                        <input type="checkbox" name="id" id="">
+                    </form>
+                </div>
+                <div class="discription-div">
+                    <div class="discription">
+                        <%= i.discription %> 
+                    </div>
+                    <div class="due-date">
+                        <i class="far fa-calendar-alt"></i> &nbsp; <%= i.date %> 
+                    </div>
+
+                </div>
+                <div class="category-div">
+                    <div class="category">
+                        <%= i.category %> 
+                    </div>
+                </div>
+                
+            </li>
+        <% } %>
+    </ul>
 
     <script src="js/home.js"></script>
 </body>

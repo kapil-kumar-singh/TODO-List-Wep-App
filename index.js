@@ -3,7 +3,7 @@ const app = express();
 const port = 9000;
 
 const db = require('./config/mongoose');
-const TodoSchema = require('./models/todoSchema');
+// const TodoSchema = require('./models/todoSchema');
 
 app.use(express.urlencoded());
 
