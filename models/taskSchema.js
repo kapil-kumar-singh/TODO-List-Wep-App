@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const todoSchema = new mongoose.Schema({
+const taskSchema = new mongoose.Schema({
     discription:{
         type: String,
         required: true
@@ -12,11 +12,11 @@ const todoSchema = new mongoose.Schema({
     date: {
         type : Date,
         required: true,
-        // get: value => value.toDateString()
+        get: value => value.toDateString()
 
     }
 });
 
-const TodoSchema = mongoose.model('TodoSchema', todoSchema);
+const TaskSchema = mongoose.model('TaskSchema', taskSchema);
 
-module.exports = TodoSchema;
+module.exports = TaskSchema;

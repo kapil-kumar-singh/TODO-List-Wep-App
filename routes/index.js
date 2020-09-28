@@ -2,14 +2,15 @@ const express = require('express');
 const router = express.Router();
 
 
-
-const homeController = require("../controllers/todo_controller");
+const taskController = require("../controllers/task_controller");
 
 console.log(`router is loaded`);
 
-router.get("/", homeController.home);
+router.get("/", taskController.home);
 
-router.post('/add_task', homeController.addTask);
+router.post('/add_task', taskController.addTask);
+
+router.post('/delete-task', taskController.deleteTask);
 
 
 module.exports = router;

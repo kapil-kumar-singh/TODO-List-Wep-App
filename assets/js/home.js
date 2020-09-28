@@ -33,4 +33,3 @@ due_date_div.addEventListener('click', function(event){
     discription_div.style.backgroundColor = "white";
     category_div.style.backgroundColor = "white";
 })
-

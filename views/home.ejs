@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1 id = 'heading'>TODO App</h1>
-    <form action="/add_task" method="post" id="create_form">
+    <form action="/add_task" method="post" id="create_task">
         <div id="discription_div">
             <label for="discription">DISCRIPTION</label>
             <input type="text" name="discription" id ="discription" placeholder="What do you need to do ?"required>
@@ -38,17 +38,20 @@
     </form>
 
     <div id="buttons">
-        <button type="submit" form="create_form" id="add_button"><i class="fas fa-plus"></i> &nbsp; ADD TASK</button>
-        <button type="submit" id="delete_button"><i class="fas fa-trash-alt"></i> &nbsp; DELETE TASK</button>
+        <button type="submit" form="create_task" id="add_button"><i class="fas fa-plus"></i> &nbsp; ADD TASK</button>
+        <button type="submit" form="delete_task" id="delete_button"><i class="fas fa-trash-alt"></i> &nbsp; DELETE TASK</button>
     </div>
+
+    <form action="/delete-task" method="post" id="delete_task">
+
+    </form>
     
+
     <ul>
-        <% for(let i of Todoschema) { %>
+        <% for(let i of Taskschema) { %>
             <li class="list">
                 <div class="checkbox">
-                    <form action="" method="get">
-                        <input type="checkbox" name="id" id="">
-                    </form>
+                    <input type="checkbox" form="delete_task" name="id" value="<%=i._id%>" >
                 </div>
                 <div class="discription-div">
                     <div class="discription">
